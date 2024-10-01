@@ -11,12 +11,14 @@ const student = {
   name: "mark",
   age: 16,
 };
-console.log(DOMSelctors.description);
+console.log(DOMSelectors.description);
 
 function changeColor() {
-  let button = document.querySelector(".enter");
+  let button = document.querySelector("button");
   //listen for a click event
   button.addEventListener("click", function (event) {
+    //prevents default behavior
+    event.preventDefault();
     //logging the click event
     console.log(event.target);
     button.style.backgroundColor = "red";
