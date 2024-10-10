@@ -1,0 +1,45 @@
+body
+{
+    background-color: rgb(255, 240, 220);
+}
+html
+* {
+    text-align: center;
+}
+
+h1{
+    color: darkgoldenrod;
+ }
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(255, 240, 220);
+}
+
+
+.card-header{
+    font-size: 3.2rem;
+    margin-top: 1.2rem;
+}
+
+.card-desc{
+    font-size: 2.0rem;
+    text-align: center;
+}
+
+/* {
+    font-size: 10px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px 15px 0px 15px;
+    font-family: "Single Day", cursive;
+    color: rgb(350, 176, 176);
+    h1{
+        font-size: 100px;
+    }
+}
+ */
