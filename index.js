@@ -3,15 +3,23 @@ console.log(header.parentElement); */
 
 const DOMSelectors = {
   header: document.querySelector("h1"),
+  cardHeader: document.querySelector(".card-header"),
   description: document.querySelector(".card-desc"),
-  items: document.querySelectorAll("li"), //the all allows for every li to be selected, without it, only the first one will selected.
+  /*   items: document.querySelectorAll("li"), //the all allows for every li to be selected, without it, only the first one will selected. */
+  button: document.querySelector(".btn"),
+  form: document.querySelector(".form"),
 };
 
-const student = {
+DOMSelectors.button.addEventListener("click", function (event) {
+  console.log(event.target.parentElement);
+  event.target.parentElement.style.backgroundColor = "red";
+});
+
+/* const student = {
   name: "mark",
   age: 16,
 };
-console.log(DOMSelectors.description);
+console.log(DOMSelectors.description); */
 
 function changeColor() {
   let button = document.querySelector("button");
