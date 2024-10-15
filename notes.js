@@ -21,7 +21,3 @@ function changeColor() {
     button.style.backgroundColor = "red";
   }); //if an event happens we can run some code
 }
-
-DOMSelectors.button.addEventListener("click", function (event) {
-    console.log(event.)
-}s
