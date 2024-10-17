@@ -21,19 +21,21 @@ h1{
 }
 
 .card{
-    width: 25rem;
+    width: 20%;
     height: 35rem;
     border: 15px solid wheat;
     border-radius: 3px;
     border-style: double;
     display: flex;
-    margin: 0 auto;
+    margin: 20rem 0;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     background-color: blanchedalmond;
     box-shadow: 1rem 1rem 1rem -1rem rgb(55, 52, 59);
 }
+
+
 .card-img{
     width: 80%;
     height: 40%;
@@ -52,6 +54,8 @@ h1{
     text-align: center;
 }
 
+
+
 /* {
     font-size: 10px;
     box-sizing: border-box;
@@ -64,3 +68,5 @@ h1{
     }
 }
  */
+
+
