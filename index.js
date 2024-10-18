@@ -18,6 +18,10 @@ const DOMSelectors = {
   console.log(event.target.parentElement);
   event.target.parentElement.style.backgroundColor = "red";
 }); */
+
+DOMSelectors.remove.addEventListener("remove", function (event) {
+  event.preventDefault();
+});
 DOMSelectors.button.addEventListener("click", function (event) {
   event.preventDefault();
 
@@ -34,6 +38,7 @@ DOMSelectors.button.addEventListener("click", function (event) {
               <h2 class="card-header">${name}</h2>
               <img src="https://th.bing.com/th/id/R.91a812ea28dbf352fe4ff268a61ae742?rik=AESw7XnMvAGyTA&riu=http%3a%2f%2fgreystoneglobal.com%2fwp-content%2fuploads%2f2015%2f05%2ffailure.jpg&ehk=ZcYNluoILrmLjgw1gTRiahng1%2bqFXc9g%2fqJOcsWDBUs%3d&risl=&pid=ImgRaw&r=0" alt="haha" class="card-img">
               <h3 class="card-desc">Hobbies: ${hobbies}, Age: ${age}</h3>
+              <div> <button class="remove" type="remove">remove</button </div>
         </div>
     </div>`
   );

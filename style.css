@@ -5,6 +5,7 @@ body
 html
 * {
     text-align: center;
+    box-sizing: border-box;
 }
 
 h1{
@@ -12,7 +13,7 @@ h1{
  }
 
 
-.container {
+ .container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -21,25 +22,26 @@ h1{
 }
 
 .card{
-    width: 20%;
+    width: 50%;
     height: 35rem;
     border: 15px solid wheat;
     border-radius: 3px;
     border-style: double;
     display: flex;
-    margin: 20rem 0;
+    margin: 0;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     background-color: blanchedalmond;
     box-shadow: 1rem 1rem 1rem -1rem rgb(55, 52, 59);
+    padding: 0px 15px 0px 15px;
 }
 
 
 .card-img{
-    width: 80%;
+    width: 100%;
     height: 40%;
-    object-fit: cover;
+    object-fit: contain;
     background-color: transparent;
     position: relative;
     transition: all 0.3s;
@@ -50,8 +52,9 @@ h1{
 }
 
 .card-desc{
-    font-size: 2.0rem;
+    font-size: 1.0rem;
     text-align: center;
+    text-wrap: wrap;
 }
 
 
