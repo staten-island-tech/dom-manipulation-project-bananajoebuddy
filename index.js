@@ -12,6 +12,8 @@ const DOMSelectors = {
   name: document.querySelector("#name"),
   hobbies: document.querySelector("#hobbies"),
   age: document.querySelector("#age"),
+  card: document.querySelector(".card"),
+  remove: document.querySelector(".remove"),
 };
 
 /* DOMSelectors.button.addEventListener("click", function (event) {
@@ -19,9 +21,11 @@ const DOMSelectors = {
   event.target.parentElement.style.backgroundColor = "red";
 }); */
 
-DOMSelectors.remove.addEventListener("remove", function (event) {
-  event.preventDefault();
-});
+function clearInputFields() {
+  DOMSelectors.name.value = "";
+  DOMSelectors.hobbies.value = "";
+  DOMSelectors.age.value = "";
+}
 DOMSelectors.button.addEventListener("click", function (event) {
   event.preventDefault();
 
@@ -43,40 +47,3 @@ DOMSelectors.button.addEventListener("click", function (event) {
     </div>`
   );
 });
-//select all list items
-/* const item = document.querySelectorAll("li"); */
-
-//turn the node list into an array
-/* const items = Array.from(item); */
-//iterate/loop over array and for each element make the color red
-/* const student = {
-  name: "mark",
-  age: 16,
-};
-console.log(DOMSelectors.description); */
-/* const buttons = document.querySelectorAll("button");
-buttons.forEach((btn) =>
-  btn.addEventListener("click", function (event) {
-    console.log(event.target.textContent);
-  })
-); */
-
-/* DOMSelectors.container.insertAdjacentHTML(
-  "beforeend",
-  <div class="card">
-    <h2 class="card-header">${}</h2>
-  </div>
-);
-function changeColor() {
-  let button = document.querySelector("button");
-  //listen for a click event
-  button.addEventListener("click", function (event) {
-    //prevents default behavior
-    event.preventDefault();
-    //logging the click event
-    console.log(event.target);
-    button.style.backgroundColor = "red";
-  }); //if an event happens we can run some code
-}
-
-changeColor(); */
