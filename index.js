@@ -46,4 +46,6 @@ DOMSelectors.button.addEventListener("click", function (event) {
         </div>
     </div>`
   );
+
+  clearInputFields();
 });
