@@ -19,9 +19,11 @@ const DOMSelectors = {
   event.target.parentElement.style.backgroundColor = "red";
 }); */
 
-DOMSelectors.remove.addEventListener("remove", function (event) {
-  event.preventDefault();
-});
+function clearInputFields() {
+  DOMSelectors.name.value = "";
+  DOMSelectors.hobbies.value = "";
+  DOMSelectors.age.value= "";
+};
 DOMSelectors.button.addEventListener("click", function (event) {
   event.preventDefault();
 
@@ -42,8 +44,18 @@ DOMSelectors.button.addEventListener("click", function (event) {
         </div>
     </div>`
   );
+
+  clearInputFields();
 });
-//select all list items
+
+function removeObject(event) {
+  const card= event.target.closest(".card")
+  if (card) {
+    card.remove();
+  }
+  
+};
+//select all list items (notes dont look at this)
 /* const item = document.querySelectorAll("li"); */
 
 //turn the node list into an array
