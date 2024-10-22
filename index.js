@@ -47,5 +47,12 @@ DOMSelectors.button.addEventListener("click", function (event) {
     </div>`
   );
 
+  const newcard = DOMSelector.container.lastElementChild;
+  const
+const removeButton = document.card("card");
+  removeButton.remove();
+
   clearInputFields();
+
+  
 });
